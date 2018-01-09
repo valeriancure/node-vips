@@ -11,6 +11,7 @@ vips.Image.openslideload(process.argv[2], {
   autocrop: true,
   async: (err, image) => {
     if (err) {
+      console.log({err})
       throw err;
     }
 
